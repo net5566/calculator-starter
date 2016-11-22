@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function showNotImplemented() {
   console.warn('This function is not implemented yet.');
 }
@@ -11,7 +10,7 @@ const CalcButton = (props) => {
   return (
     <button
       className={`calc-btn ${extraClass}`}
-      onClick={onClick}
+      onClick ={ () => onClick(children)}
     >
       {children}
     </button>
